@@ -1,9 +1,11 @@
+@import "utilities/index";
 @import "partials/portfolio";
 @import "partials/header";
 @import "partials/footer";
 @import "partials/id";
 @import "partials/about";
 @import "partials/contact";
+
 
 html, body {
   box-sizing: border-box;
@@ -19,7 +21,7 @@ html {
 
 body {
   background: transparent;
-  font-family: 'Droid Sans', sans-serif;
+  font-family: $font-family--primary;
   min-height: 100%; //sticky footer
   display: flex; //sticky footer
   flex-direction: column; //sticky footer
