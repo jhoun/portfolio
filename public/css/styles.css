@@ -198,19 +198,18 @@ ul {
     margin-bottom: 50px; }
   .about-container {
     display: flex;
-    flex-direction: row; }
+    flex-direction: row;
+    justify-content: center; }
     .about-container .image-container {
-      flex: 2;
-      text-align: center;
-      width: 550px; }
+      text-align: center; }
       .about-container .image-container img {
         width: 550px;
         height: 620px; }
     .about-container .paragraph-container {
-      flex: 1;
-      margin-top: -20px;
-      margin-right: 100px;
-      font-size: 20px; } }
+      margin-left: 60px;
+      font-size: 20px;
+      background-color: red;
+      width: 420px; } }
 
 .contact-title {
   text-align: left;
