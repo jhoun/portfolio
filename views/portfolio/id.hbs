@@ -1,0 +1,33 @@
+<ul>
+  {{#each project}}
+    <div class="project-description-container">
+
+      <h1 class="title">{{this.title}}</h1>
+      <img src="{{this.image}}">
+      <hr class="horizontal">
+      <div class="row">
+        <div class="primary col">
+          <div class="web-address"><a href="{{this.link}}" target="_blank">Web Address</a></div>
+          <br>
+          <div class="link"><a href="{{this.github}}" target="_blank">Github Repository</a></div>
+          {{#if ../user.admin}}
+            <div class="user-container">
+              <a href="/portfolio/{{id}}/edit">Edit</a>
+
+              <form form="form" method="POST" enctype="x-www-form-urlencoded">
+                <input type="hidden" name="_method" value="DELETE">
+                <input type="submit" value="Delete" id="submit">
+              </form>
+            </div>
+          {{/if}}
+          </div>
+          <div class="secondary col">
+            <div class="description">{{this.description}}</div>
+          </div>
+        </div>
+      </div>
+
+    <a href="/portfolio"><button>Back</button></a>
+  {{/each}}
+</ul>
+

@@ -1,0 +1,34 @@
+@import "partials/portfolio";
+@import "partials/header";
+@import "partials/footer";
+@import "partials/id";
+@import "partials/about";
+@import "partials/contact";
+
+html, body {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background: transparent;
+  font-family: 'Droid Sans', sans-serif;
+  min-height: 100%; //sticky footer
+  display: flex; //sticky footer
+  flex-direction: column; //sticky footer
+}
+
+a {
+  color: green;
+}
+
+
+
+

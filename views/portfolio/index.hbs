@@ -1,0 +1,14 @@
+<div class="banner">
+  <h1 class="headline"> I am a developer. I love building things, meeting people, and walking dogs. </h1>
+</div>
+
+<div class="body-container">
+  {{#each project}}
+      <div class="project-container">
+        <a href="/portfolio/{{id}}"><img src="{{this.image}}"></a>
+        <div class="title">{{this.title}}</div>
+      </div>
+  {{/each}}
+</div>
+
+       {{!--  <div class="link"><strong>Github Repository:</strong><a href="{{this.link}}">{{this.link}}</a></div> --}}

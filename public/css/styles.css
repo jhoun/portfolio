@@ -1,0 +1,257 @@
+.form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .form .textarea {
+    font-size: 30px;
+    border: 2px solid black;
+    margin: 5px 0;
+    width: 300px; }
+  .form .textarea::placeholder {
+    font-size: 20px; }
+  .form input::placeholder {
+    font-size: 20px; }
+  .form .submit {
+    margin-top: 20px;
+    width: 100px;
+    font-size: 20px; }
+
+.form input {
+  font-size: 30px;
+  border: 2px solid black;
+  margin: 10px 0;
+  width: 300px; }
+
+.banner {
+  color: #fff;
+  background: #3acec2;
+  padding: 5em 0;
+  margin-bottom: 100px;
+  text-align: center; }
+  .banner .headline {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: 30px;
+    margin-right: 30px; }
+
+.body-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 30px;
+  margin-right: 30px;
+  flex: 1; }
+  .body-container .project-container {
+    margin-left: 30px;
+    margin-right: 30px; }
+    .body-container .project-container img {
+      height: 300px;
+      width: 400px; }
+    .body-container .project-container .title {
+      font-size: 2em;
+      color: #404040;
+      text-align: center; }
+
+#header-container, #nav {
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke; }
+
+#header-container {
+  text-align: center;
+  height: 30%; }
+  #header-container #nav div {
+    margin-right: 20px; }
+  #header-container #nav div a {
+    text-decoration: none;
+    color: black; }
+  #header-container #nav .user a {
+    color: salmon; }
+
+@media (min-width: 500px) {
+  #header-container {
+    height: 140px; }
+  #nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; } }
+
+@media (min-width: 1024px) {
+  #header-container {
+    flex-direction: row;
+    justify-content: space-between; }
+    #header-container #logo {
+      padding-top: 30px;
+      margin-left: 100px; }
+    #header-container #nav {
+      padding-top: 35px;
+      margin-right: 35px; } }
+
+#footer-container {
+  height: 180px;
+  margin-top: 60px;
+  background-color: whitesmoke;
+  text-align: center; }
+  #footer-container .copyright {
+    padding-top: 40px; }
+  #footer-container .social-media {
+    padding-top: 15px; }
+    #footer-container .social-media img {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+      margin-top: 10px; }
+
+ul {
+  padding: 0px; }
+
+.project-description-container .title {
+  text-align: center; }
+
+.project-description-container img {
+  height: 50%;
+  width: 60%;
+  display: block;
+  margin: 50px auto; }
+
+.project-description-container .horizontal {
+  border-top: 1px solid #8c8b8b;
+  width: 60%;
+  margin-bottom: 30px; }
+
+.project-description-container .row {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: auto; }
+  .project-description-container .row .primary {
+    border-bottom: 1px solid #8c8b8b;
+    padding-bottom: 20px;
+    font-size: 15px; }
+    .project-description-container .row .primary .user-container {
+      margin-top: 70px; }
+      .project-description-container .row .primary .user-container a {
+        text-decoration: none;
+        color: salmon;
+        font-size: 25px; }
+      .project-description-container .row .primary .user-container input#submit {
+        background: none;
+        border: none;
+        font-size: 25px;
+        margin-left: -7px;
+        margin-top: 7px;
+        color: salmon;
+        cursor: pointer; }
+
+@media (min-width: 1024px) {
+  .project-description-container img {
+    height: 700px;
+    width: 960px; }
+  .project-description-container .horizontal {
+    border-top: 1px solid #8c8b8b;
+    width: 960px;
+    margin-bottom: 30px; }
+  .project-description-container .row {
+    display: flex;
+    flex-direction: row;
+    width: 960px; }
+    .project-description-container .row .primary {
+      flex: 1;
+      border-right: 1px solid #8c8b8b;
+      border-bottom: 0px;
+      height: 200px;
+      padding-right: 20px;
+      padding-top: 25px; }
+    .project-description-container .row .secondary {
+      flex: 2;
+      padding-left: 20px; } }
+
+.about-title {
+  text-align: left;
+  margin: 50px 0;
+  font-size: 25px;
+  margin-left: 100px; }
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1; }
+  .about-container .image-container {
+    text-align: center; }
+    .about-container .image-container img {
+      width: 275px;
+      height: 320px;
+      margin-bottom: 20px; }
+  .about-container .paragraph-container {
+    font-size: 15px;
+    margin: 0 20px; }
+
+@media (min-width: 1024px) {
+  hr {
+    border: 0;
+    clear: both;
+    display: block;
+    width: 100%;
+    background-color: grey;
+    height: 2px;
+    margin-bottom: 50px; }
+  .about-container {
+    display: flex;
+    flex-direction: row; }
+    .about-container .image-container {
+      flex: 2;
+      text-align: center;
+      width: 550px; }
+      .about-container .image-container img {
+        width: 550px;
+        height: 620px; }
+    .about-container .paragraph-container {
+      flex: 1;
+      margin-top: -20px;
+      margin-right: 100px;
+      font-size: 20px; } }
+
+.contact-title {
+  text-align: left;
+  margin: 50px 0;
+  font-size: 25px;
+  margin-left: 100px; }
+
+.contact-container {
+  flex: 1;
+  text-align: center; }
+  .contact-container .contact-subtitle {
+    margin-top: 30px;
+    font-size: 30px; }
+  .contact-container .contact-info-container {
+    margin-top: 40px; }
+    .contact-container .contact-info-container .row {
+      margin: 40px 0; }
+    .contact-container .contact-info-container .title {
+      margin-bottom: 5px;
+      color: #D72500; }
+
+.otw img {
+  width: 40px;
+  height: 40px; }
+
+html, body {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  overflow-x: hidden; }
+
+html {
+  height: 100%; }
+
+body {
+  background: transparent;
+  font-family: 'Droid Sans', sans-serif;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column; }
+
+a {
+  color: green; }

@@ -1,0 +1,13 @@
+<form class="form" form="form" action="/portfolio/{{id}}" name="form" method="POST" enctype="x-www-form-urlencoded">
+  <input type="hidden" name="_method" value="PUT">
+  <h1>EDIT PROJECT</h1>
+  <input type="text" name="title" placeholder="PROJECT TITLE">
+  <textarea id="form" class="textarea" cols="20" rows ="5" name="description" placeholder="DESCRIPTION"></textarea>
+  <input type="text" name="image" placeholder="IMAGE URL">
+  <input type="text" name="link" placeholder="PROJECT URL">
+  <input type="text" name="github" placeholder="GITHUB URL">
+
+  <input class="submit" type="submit" value="SUBMIT">
+  <a href="/portfolio/{{id}}"><button>Back</button></a>
+</form>
+</form>
