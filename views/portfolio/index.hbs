@@ -2,11 +2,13 @@
   <h1 class="headline"> I am a developer. I love building things, meeting people, and walking dogs. </h1>
 </div>
 
-<div class="body-container">
+<div class="project">
   {{#each project}}
-      <div class="project-container">
-        <a href="/portfolio/{{id}}"><img src="{{this.image}}"></a>
-        <div class="title">{{this.title}}</div>
+      <div class="project__container">
+        <a class="project__link" href="/portfolio/{{id}}">
+          <img class="project__img" src="{{this.image}}">
+        </a>
+        <div class="project__title">{{this.title}}</div>
       </div>
   {{/each}}
 </div>
