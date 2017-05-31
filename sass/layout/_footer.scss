@@ -4,12 +4,8 @@
   background-color: whitesmoke;
   text-align: center;
 
-  .copyright {
-    padding-top: 40px;
-  }
-
   .social-media {
-    padding-top: 15px;
+    padding-top: 40px;
 
     img {
       width: 40px;
@@ -17,6 +13,9 @@
       margin-right: 10px;
       margin-top: 10px;
     }
+  }
+   .copyright {
+    padding-top: 20px;
   }
 
 }

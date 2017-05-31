@@ -1,0 +1,22 @@
+.contact {
+  flex: 1;
+  text-align: center;
+
+  .contact__subtitle {
+    margin-top: 30px;
+    font-size: 30px;
+  }
+
+  .contact__container {
+    margin-top: 40px;
+
+     .contact__row {
+      margin: 40px 0;
+     }
+
+     .contact__title {
+      margin-bottom: 5px;
+      color: #D72500;
+     }
+  }
+}
