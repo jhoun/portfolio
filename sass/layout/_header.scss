@@ -10,22 +10,15 @@
 }
 
 @media (min-width: 500px){
-
   #header-container {
     height: 140px;
   }
-
 }
+
 @media (min-width: 1024px){
   #header-container {
     flex-direction: row;
     justify-content: space-between;
-
-    #logo {
-      padding-top: 30px;
-      margin-left: 100px;
-    }
-
   }
 }
 

@@ -218,10 +218,7 @@ a {
 @media (min-width: 1024px) {
   #header-container {
     flex-direction: row;
-    justify-content: space-between; }
-    #header-container #logo {
-      padding-top: 30px;
-      margin-left: 100px; } }
+    justify-content: space-between; } }
 
 #footer-container {
   height: 180px;
@@ -258,8 +255,13 @@ a {
 
 @media (min-width: 1024px) {
   #nav {
-    padding-top: 35px;
+    padding-top: 40px;
     margin-right: 35px; } }
+
+@media (min-width: 1024px) {
+  #logo {
+    padding-top: 30px;
+    margin-left: 100px; } }
 
 .form {
   text-align: center;
