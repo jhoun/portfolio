@@ -26,6 +26,12 @@ body {
   flex-direction: column; //sticky footer
 }
 
-a {
-  color: green;
+hr {
+  border: 0;
+  clear:both;
+  display:block;
+  width: 100%;
+  background-color: palette(grey, xx-light);
+  height: 2px;
+  margin-bottom: 50px;
 }

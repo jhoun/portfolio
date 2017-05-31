@@ -199,13 +199,19 @@ body {
   display: flex;
   flex-direction: column; }
 
-a {
-  color: green; }
+hr {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 100%;
+  background-color: #ebecec;
+  height: 2px;
+  margin-bottom: 50px; }
 
 #header-container, #nav {
   display: flex;
   flex-direction: column;
-  background-color: #ebecec; }
+  background-color: whitesmoke; }
 
 #header-container {
   text-align: center;
@@ -242,6 +248,37 @@ a {
   margin-left: 30px;
   margin-right: 30px;
   flex: 1; }
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1; }
+  .about-container .image-container img {
+    width: 275px;
+    height: 320px;
+    margin-bottom: 20px; }
+  .about-container .paragraph-container {
+    font-size: 15px;
+    margin: 0 20px; }
+
+@media (min-width: 1024px) {
+  .about-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    .about-container .image-container img {
+      width: 550px;
+      height: 620px; }
+    .about-container .paragraph-container {
+      margin-left: 60px;
+      font-size: 20px;
+      width: 420px; } }
+
+.page-title {
+  text-align: center;
+  margin: 50px 0;
+  font-size: 25px;
+  font-weight: 300; }
 
 #nav .nav__item {
   margin: 4px 0; }
@@ -382,46 +419,6 @@ ul {
     .project-description-container .row .secondary {
       flex: 2;
       padding-left: 20px; } }
-
-.about-title {
-  text-align: left;
-  margin: 50px 0;
-  font-size: 25px;
-  margin-left: 100px;
-  font-weight: 100; }
-
-.about-container {
-  display: flex;
-  flex-direction: column;
-  flex: 1; }
-  .about-container .image-container img {
-    width: 275px;
-    height: 320px;
-    margin-bottom: 20px; }
-  .about-container .paragraph-container {
-    font-size: 15px;
-    margin: 0 20px; }
-
-@media (min-width: 1024px) {
-  hr {
-    border: 0;
-    clear: both;
-    display: block;
-    width: 100%;
-    background-color: grey;
-    height: 2px;
-    margin-bottom: 50px; }
-  .about-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center; }
-    .about-container .image-container img {
-      width: 550px;
-      height: 620px; }
-    .about-container .paragraph-container {
-      margin-left: 60px;
-      font-size: 20px;
-      width: 420px; } }
 
 .contact-title {
   text-align: left;

@@ -1,10 +1,10 @@
-.about-title {
-  text-align: left;
-  margin: 50px 0;
-  font-size: 25px;
-  margin-left: 100px;
-  font-weight: $font-weight--thin;
-}
+// .page-title {
+//   text-align: left;
+//   margin: 50px 0;
+//   font-size: 25px;
+//   margin-left: 100px;
+//   font-weight: $font-weight--thin;
+// }
 
 .about-container {
   display: flex;
@@ -29,15 +29,15 @@
 
 @media (min-width: 1024px){
 
-  hr {
-    border: 0;
-    clear:both;
-    display:block;
-    width: 100%;
-    background-color:grey;
-    height: 2px;
-    margin-bottom: 50px;
-  }
+  // hr {
+  //   border: 0;
+  //   clear:both;
+  //   display:block;
+  //   width: 100%;
+  //   background-color:grey;
+  //   height: 2px;
+  //   margin-bottom: 50px;
+  // }
 
   .about-container {
   display: flex;
