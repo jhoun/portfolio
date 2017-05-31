@@ -1,28 +1,12 @@
 #header-container, #nav {
   display: flex;
   flex-direction: column;
-  background-color: whitesmoke;
+  background-color: palette(grey, xx-light);
 }
 
 #header-container {
   text-align: center;
   height: 30%;
-
-  #nav {
-
-    div {
-      margin-right: 20px;
-    }
-
-    div a {
-      text-decoration: none;
-      color: black;
-    }
-
-    .user a {
-      color: salmon;
-    }
-  }
 }
 
 @media (min-width: 500px){
@@ -30,13 +14,6 @@
   #header-container {
     height: 140px;
   }
-
-  #nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-
 
 }
 @media (min-width: 1024px){
@@ -49,10 +26,6 @@
       margin-left: 100px;
     }
 
-    #nav {
-      padding-top: 35px;
-      margin-right: 35px;
-    }
   }
 }
 

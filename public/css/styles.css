@@ -1,3 +1,4 @@
+@import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -204,26 +205,15 @@ a {
 #header-container, #nav {
   display: flex;
   flex-direction: column;
-  background-color: whitesmoke; }
+  background-color: #ebecec; }
 
 #header-container {
   text-align: center;
   height: 30%; }
-  #header-container #nav div {
-    margin-right: 20px; }
-  #header-container #nav div a {
-    text-decoration: none;
-    color: black; }
-  #header-container #nav .user a {
-    color: salmon; }
 
 @media (min-width: 500px) {
   #header-container {
-    height: 140px; }
-  #nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center; } }
+    height: 140px; } }
 
 @media (min-width: 1024px) {
   #header-container {
@@ -231,10 +221,7 @@ a {
     justify-content: space-between; }
     #header-container #logo {
       padding-top: 30px;
-      margin-left: 100px; }
-    #header-container #nav {
-      padding-top: 35px;
-      margin-right: 35px; } }
+      margin-left: 100px; } }
 
 #footer-container {
   height: 180px;
@@ -250,6 +237,29 @@ a {
       height: 40px;
       margin-right: 10px;
       margin-top: 10px; }
+
+#nav .nav__item {
+  margin: 4px 0; }
+
+#nav .nav__item a {
+  color: black;
+  text-decoration: none; }
+
+#nav .nav__item--user a {
+  color: #ffa07a; }
+
+@media (min-width: 500px) {
+  #nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    #nav .nav__item {
+      margin: 0 15px; } }
+
+@media (min-width: 1024px) {
+  #nav {
+    padding-top: 35px;
+    margin-right: 35px; } }
 
 .form {
   text-align: center;
