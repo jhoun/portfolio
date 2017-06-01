@@ -203,6 +203,9 @@ a {
   color: black;
   text-decoration: none; }
 
+ul {
+  padding: 0px; }
+
 hr {
   border: 0;
   clear: both;
@@ -287,6 +290,12 @@ hr {
   font-size: 25px;
   font-weight: 300; }
 
+.back {
+  margin-top: 10px; }
+
+.back a {
+  color: #ffa07a; }
+
 .contact {
   flex: 1;
   text-align: center; }
@@ -300,6 +309,66 @@ hr {
     .contact .contact__container .contact__title {
       margin-bottom: 5px;
       color: #D72500; }
+
+.id .id__img {
+  height: 50%;
+  width: 60%;
+  display: block;
+  margin: 50px auto; }
+
+.id .id__horizontal {
+  border-top: 1px solid #8c8b8b;
+  width: 60%;
+  margin-bottom: 30px; }
+
+.id .id__row {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: auto; }
+  .id .id__row .id__primary {
+    border-bottom: 1px solid #8c8b8b;
+    padding-bottom: 20px;
+    font-size: 15px; }
+    .id .id__row .id__primary .user {
+      margin-top: 35px; }
+      .id .id__row .id__primary .user .user__link {
+        color: salmon;
+        font-size: 15px; }
+      .id .id__row .id__primary .user input#submit {
+        background: none;
+        border: none;
+        font-size: 15px;
+        margin-left: -7px;
+        margin-top: 7px;
+        color: salmon;
+        cursor: pointer; }
+  .id .id__row .id__secondary {
+    margin-top: 20px; }
+
+@media (min-width: 1024px) {
+  .id .id__img {
+    height: 700px;
+    width: 960px; }
+  .id .id__horizontal {
+    border-top: 1px solid #8c8b8b;
+    width: 960px;
+    margin-bottom: 30px; }
+  .id .id__row {
+    display: flex;
+    flex-direction: row;
+    width: 960px; }
+    .id .id__row .id__primary {
+      flex: 1;
+      border-right: 1px solid #8c8b8b;
+      border-bottom: 0px;
+      height: 200px;
+      padding-right: 20px;
+      padding-top: 25px; }
+    .id .id__row .id__secondary {
+      flex: 2;
+      padding-left: 20px;
+      margin-top: 0; } }
 
 #nav .nav__item {
   margin: 4px 0; }
@@ -364,79 +433,24 @@ hr {
 
 .project__container {
   margin-left: 30px;
-  margin-right: 30px; }
+  margin-right: 30px;
+  margin-bottom: 60px; }
   .project__container .project__img {
-    height: 300px;
-    width: 400px; }
+    height: 85%;
+    width: 90%;
+    display: block;
+    margin: auto; }
   .project__container .project__title {
     font-size: 2em;
     color: #404040;
     text-align: center; }
 
+@media (min-width: 1024px) {
+  .project__container .project__img {
+    height: 300px;
+    width: 400px;
+    margin: 0; } }
+
 .contact__image-item {
   width: 40px;
   height: 40px; }
-
-ul {
-  padding: 0px; }
-
-.project-description-container .title {
-  text-align: center; }
-
-.project-description-container img {
-  height: 50%;
-  width: 60%;
-  display: block;
-  margin: 50px auto; }
-
-.project-description-container .horizontal {
-  border-top: 1px solid #8c8b8b;
-  width: 60%;
-  margin-bottom: 30px; }
-
-.project-description-container .row {
-  display: flex;
-  flex-direction: column;
-  width: 60%;
-  margin: auto; }
-  .project-description-container .row .primary {
-    border-bottom: 1px solid #8c8b8b;
-    padding-bottom: 20px;
-    font-size: 15px; }
-    .project-description-container .row .primary .user-container {
-      margin-top: 70px; }
-      .project-description-container .row .primary .user-container a {
-        text-decoration: none;
-        color: salmon;
-        font-size: 25px; }
-      .project-description-container .row .primary .user-container input#submit {
-        background: none;
-        border: none;
-        font-size: 25px;
-        margin-left: -7px;
-        margin-top: 7px;
-        color: salmon;
-        cursor: pointer; }
-
-@media (min-width: 1024px) {
-  .project-description-container img {
-    height: 700px;
-    width: 960px; }
-  .project-description-container .horizontal {
-    border-top: 1px solid #8c8b8b;
-    width: 960px;
-    margin-bottom: 30px; }
-  .project-description-container .row {
-    display: flex;
-    flex-direction: row;
-    width: 960px; }
-    .project-description-container .row .primary {
-      flex: 1;
-      border-right: 1px solid #8c8b8b;
-      border-bottom: 0px;
-      height: 200px;
-      padding-right: 20px;
-      padding-top: 25px; }
-    .project-description-container .row .secondary {
-      flex: 2;
-      padding-left: 20px; } }
