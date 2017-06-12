@@ -222,7 +222,7 @@ hr {
 
 #header-container {
   text-align: center;
-  height: 30%; }
+  height: 0; }
 
 @media (min-width: 500px) {
   #header-container {
@@ -231,7 +231,8 @@ hr {
 @media (min-width: 1024px) {
   #header-container {
     flex-direction: row;
-    justify-content: space-between; } }
+    justify-content: space-between;
+    height: 30%; } }
 
 #footer-container {
   height: 180px;
@@ -288,7 +289,8 @@ hr {
   text-align: center;
   margin: 50px 0;
   font-size: 25px;
-  font-weight: 300; }
+  font-weight: 300;
+  padding-top: 80px; }
 
 .back {
   margin-top: 10px; }
