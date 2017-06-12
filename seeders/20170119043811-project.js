@@ -7,7 +7,8 @@ module.exports = {
      link: "http://www.google.com",
      createdAt : new Date(),
      updatedAt : new Date(),
-     image: "http://i.imgur.com/JRKvl0E.png"
+     image: "http://i.imgur.com/JRKvl0E.png",
+     github: "http://i.imgur.com/JRKvl0E.png"
     }], {});
   },
   down: function (queryInterface, Sequelize) {
