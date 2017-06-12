@@ -221,8 +221,7 @@ hr {
   background-color: whitesmoke; }
 
 #header-container {
-  text-align: center;
-  height: 0; }
+  text-align: center; }
 
 @media (min-width: 500px) {
   #header-container {
@@ -289,8 +288,7 @@ hr {
   text-align: center;
   margin: 50px 0;
   font-size: 25px;
-  font-weight: 300;
-  padding-top: 80px; }
+  font-weight: 300; }
 
 .back {
   margin-top: 10px; }
