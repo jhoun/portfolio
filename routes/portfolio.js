@@ -10,7 +10,6 @@ router.route('/')
   .get((req, res) => {
     Project.findAll()
     .then((project)  => {
-      console.log(req._parsedOriginalUrl.href);
       var path = req._parsedOriginalUrl.href.slice(1);
       res.render('portfolio/index', {project, user: req.user, path: path});
     })
