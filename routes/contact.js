@@ -6,7 +6,7 @@ const User = db.User;
 
 router.route('/')
 .get((req, res) => {
-  var path = req.baseUrl.slice(1).toLowerCase();
+  var path = req.baseUrl.slice(1);
   res.render('info/contact', {user: req.user, path: path});
 });
 
