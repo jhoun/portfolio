@@ -10,7 +10,7 @@ router.route('/')
   .get((req, res) => {
     Project.findAll()
     .then((project)  => {
-      var path = req.baseUrl.slice(1);
+      var path = req.baseUrl.slice(1).toLowerCase();
       res.render('portfolio/index', {project, user: req.user, path: path});
     })
     .catch((e) =>{
