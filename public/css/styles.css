@@ -193,7 +193,7 @@ html {
   height: 100%; }
 
 body {
-  background: transparent;
+  background: #f7f7f7;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   min-height: 100%;
   display: flex;
@@ -218,10 +218,11 @@ hr {
 #header-container, #nav {
   display: flex;
   flex-direction: column;
-  background-color: whitesmoke; }
+  background-color: #9099A2; }
 
 #header-container {
-  text-align: center; }
+  text-align: center;
+  color: white; }
 
 @media (min-width: 500px) {
   #header-container {
@@ -230,13 +231,12 @@ hr {
 @media (min-width: 1024px) {
   #header-container {
     flex-direction: row;
-    justify-content: space-between;
-    height: 30%; } }
+    justify-content: space-between; } }
 
 #footer-container {
   height: 180px;
   margin-top: 60px;
-  background-color: whitesmoke;
+  background-color: #9099A2;
   text-align: center; }
   #footer-container .social-media {
     padding-top: 40px; }
@@ -246,7 +246,8 @@ hr {
       margin-right: 10px;
       margin-top: 10px; }
   #footer-container .copyright {
-    padding-top: 20px; }
+    padding-top: 20px;
+    color: white; }
 
 .project {
   display: flex;
@@ -288,7 +289,8 @@ hr {
   text-align: center;
   margin: 50px 0;
   font-size: 25px;
-  font-weight: 300; }
+  font-weight: 300;
+  color: #6d7993; }
 
 .back {
   margin-top: 10px; }
@@ -373,6 +375,18 @@ hr {
 #nav .nav__item {
   margin: 4px 0; }
 
+#nav .nav__item a {
+  color: white; }
+
+#nav .portfolio #portfolio {
+  color: #6d7993; }
+
+#nav .about #about {
+  color: #6d7993; }
+
+#nav .contact #contact {
+  color: #6d7993; }
+
 #nav .nav__item--user a {
   color: #ffa07a; }
 
@@ -380,14 +394,18 @@ hr {
   #nav {
     display: flex;
     flex-direction: row;
-    justify-content: center; }
+    justify-content: space-evenly; }
     #nav .nav__item {
-      margin: 0 15px; } }
+      margin: 0 15px;
+      flex: 1; } }
 
 @media (min-width: 1024px) {
   #nav {
+    width: 30%;
     padding-top: 40px;
-    margin-right: 35px; } }
+    margin-right: 35px; }
+  a.nav__item:hover {
+    color: blue; } }
 
 @media (min-width: 1024px) {
   #logo {

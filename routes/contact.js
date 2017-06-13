@@ -6,7 +6,8 @@ const User = db.User;
 
 router.route('/')
 .get((req, res) => {
-  res.render('info/contact', {user: req.user});
+  var path = req.baseUrl.slice(1);
+  res.render('info/contact', {user: req.user, path: path});
 });
 
 module.exports = router;

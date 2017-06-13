@@ -2,9 +2,9 @@
 <div id="header-container">
   <h1 id="logo">Jay Houn</h1>
   <ul id="nav">
-    <div class="nav__item"><a href="/portfolio">Portfolio</a></div>
-    <div class="nav__item"><a href="/about"> About Jay</a></div>
-    <div class="nav__item"><a href="/contact">Get In Touch</a></div>
+    <div class="nav__item portfolio"><a href="/portfolio" id="{{path}}">Portfolio</a></div>
+    <div class="nav__item about"><a href="/about" id="{{path}}"> About Jay</a></div>
+    <div class="nav__item contact"><a href="/contact" id="{{path}}">Get In Touch</a></div>
     {{#if user.admin}}
     <div class="nav__item nav__item--user"><a href="/portfolio/new">Add Project</a></div>
     <div class="nav__item nav__item--user"><a href="/logout">Logout</a></div>

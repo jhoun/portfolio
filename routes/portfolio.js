@@ -3,15 +3,15 @@ const router = express.Router();
 const db = require('../models');
 const Project = db.Project;
 const User = db.User;
-const whichError  = require('../errors/errors')
+const whichError  = require('../errors/errors');
 
 //index page
 router.route('/')
   .get((req, res) => {
     Project.findAll()
     .then((project)  => {
-      console.log(req.body);
-      res.render('portfolio/index', {project, user: req.user});
+      var path = req.baseUrl.slice(1);
+      res.render('portfolio/index', {project, user: req.user, path: path});
     })
     .catch((e) =>{
       console.error(e);

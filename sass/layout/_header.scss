@@ -1,11 +1,12 @@
 #header-container, #nav {
   display: flex;
   flex-direction: column;
-  background-color: whitesmoke;
+  background-color: #9099A2;
 }
 
 #header-container {
   text-align: center;
+  color: white;
 }
 
 @media (min-width: 500px){
@@ -18,7 +19,6 @@
   #header-container {
     flex-direction: row;
     justify-content: space-between;
-    height: 30%;
   }
 }
 
