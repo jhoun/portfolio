@@ -469,7 +469,7 @@ hr {
   position: relative;
   display: inline-block;
   padding: .4em;
-  margin: 0 auto; }
+  margin: 0 auto auto; }
   #nav a::after {
     content: '';
     position: absolute;
