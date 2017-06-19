@@ -440,26 +440,89 @@ hr {
   margin: 10px 0;
   width: 300px; }
 
+/* generic css */
+.view {
+  float: left;
+  border: 10px solid #fff;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  box-shadow: 1px 1px 2px #e6e6e6;
+  cursor: default; }
+
+.view .mask {
+  width: 350px;
+  height: 250px;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0; }
+
+.view img {
+  display: block;
+  position: relative; }
+
+.view h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 30px;
+  padding: 25px;
+  /*background: rgba(0, 0, 0, 0.8);*/
+  margin: 65px 0 0 0; }
+
+.view a.info {
+  display: inline-block;
+  padding: 7px 14px;
+  background: #000;
+  color: #fff;
+  text-transform: uppercase;
+  box-shadow: 0 0 1px #000; }
+
+.view a.info:hover {
+  box-shadow: 0 0 5px #000; }
+
+/*1*/
+.view-first img {
+  /*1*/
+  transition: all 0.2s linear;
+  width: 350px;
+  height: 250px; }
+
+.view-first .mask {
+  opacity: 0;
+  background-color: rgba(165, 165, 177, 0.85);
+  transition: all 0.4s ease-in-out; }
+
+.view-first h2 {
+  transform: translateY(-100px);
+  opacity: 0;
+  transition: all 0.2s ease-in-out; }
+
+.view-first a.info {
+  opacity: 0;
+  transition: all 0.2s ease-in-out; }
+
+/* */
+.view-first:hover img {
+  transform: scale(1.1); }
+
+.view-first:hover .mask {
+  opacity: 1; }
+
+.view-first:hover h2,
+.view-first:hover a.info {
+  opacity: 1;
+  transform: translateY(0px); }
+
+.view-first:hover a.info {
+  transition-delay: 0.2s; }
+
 .project__container {
   margin-left: 30px;
   margin-right: 30px;
   margin-bottom: 60px; }
-  .project__container .project__img {
-    height: 85%;
-    width: 90%;
-    display: block;
-    margin: auto;
-    border: solid black 6px; }
-  .project__container .project__title {
-    margin-top: 15px;
-    font-size: 2em;
-    color: #404040;
-    text-align: center; }
-
-@media (min-width: 1024px) {
-  .project__container .project__img {
-    width: 450px;
-    margin: 0; } }
 
 .contact__image-item {
   width: 40px;
@@ -479,17 +542,17 @@ hr {
     height: 1px;
     visibility: hidden;
     transform: scaleX(0);
-    background-color: red;
+    background-color: #57bc90;
     transition: all .3s ease; }
   #nav a:hover::after {
     transform: scaleX(1);
     visibility: visible; }
 
 #nav .portfolio #portfolio {
-  color: #6d7993; }
+  color: #015249; }
 
 #nav .about #about {
-  color: #6d7993; }
+  color: #015249; }
 
 #nav .contact #contact {
-  color: #6d7993; }
+  color: #015249; }

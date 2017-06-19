@@ -2,12 +2,15 @@
 <hr>
 <div class="project">
   {{#each project}}
-      <div class="project__container">
-        <a class="project__link" href="/portfolio/{{id}}">
-          <img class="project__img" src="{{this.image}}">
-        </a>
-        <div class="project__title">{{this.title}}</div>
+    <div class="project__container">
+      <div class="view view-first">
+          <img src="{{this.image}}">
+          <div class="mask">
+            <h2>{{this.title}}</h2>
+            <a href="/portfolio/{{id}}" class="info">Read More</a>
+          </div>
       </div>
+    </div>
   {{/each}}
 </div>
 
