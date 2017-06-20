@@ -525,25 +525,20 @@ hr {
   width: 40px;
   height: 40px; }
 
-#nav a {
-  position: relative;
-  display: inline-block;
-  padding: .4em;
-  margin: 0 auto auto; }
-  #nav a::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    visibility: hidden;
-    transform: scaleX(0);
-    background-color: #8CBDEE;
-    transition: all .3s ease; }
-  #nav a:hover::after {
-    transform: scaleX(1);
-    visibility: visible; }
+#nav .nav__item:hover,
+#nav .nav__item:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+  border-color: var(--hover);
+  color: #8CBDEE; }
+
+#nav .nav__item {
+  color: #b5c1cc;
+  transition: 0.25s;
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1; }
 
 #nav .portfolio #portfolio {
   color: #63696F; }
