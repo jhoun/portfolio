@@ -31,7 +31,6 @@
   position: relative;
   font-size: 30px;
   padding: 25px;
-  /*background: rgba(0, 0, 0, 0.8);*/
   margin: 50px 0 0 0
 }
 
@@ -46,7 +45,7 @@
 
 .view-first .mask {
   opacity: 0;
-  background-color: rgba(144, 153, 162, 0.95);
+  background-color: rgba(75, 101, 127, 0.90);
   transition: all 0.4s ease-in-out;
 }
 
