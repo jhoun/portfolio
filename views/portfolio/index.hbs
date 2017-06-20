@@ -2,16 +2,16 @@
 <hr>
 <div class="project">
   {{#each project}}
-  <a href="/portfolio/{{id}}">
     <div class="project__container">
+      <a href="/portfolio/{{id}}">
       <div class="view view-first">
           <img src="{{this.image}}">
           <div class="mask">
             <h2>{{this.title}}</h2>
           </div>
       </div>
+      </a>
     </div>
-  </a>
   {{/each}}
 </div>
 

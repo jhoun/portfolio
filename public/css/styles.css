@@ -451,8 +451,8 @@ hr {
   cursor: pointer; }
 
 .view .mask {
-  width: 350px;
-  height: 250px;
+  width: 300px;
+  height: 200px;
   position: absolute;
   overflow: hidden;
   top: 0;
@@ -476,8 +476,8 @@ hr {
 .view-first img {
   /*1*/
   transition: all 0.2s linear;
-  width: 350px;
-  height: 250px; }
+  width: 300px;
+  height: 200px; }
 
 .view-first .mask {
   opacity: 0;
@@ -501,9 +501,7 @@ hr {
   transform: translateY(0px); }
 
 .project__container {
-  margin-left: 30px;
-  margin-right: 30px;
-  margin-bottom: 60px; }
+  margin: 50px 30px; }
 
 .contact__image-item {
   width: 40px;
