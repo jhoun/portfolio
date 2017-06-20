@@ -348,6 +348,26 @@ hr {
   .id .id__row .id__secondary {
     margin-top: 20px; }
 
+.id__web-address:hover,
+.id__web-address:focus,
+.id__link:hover,
+.id__link:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+  border-color: var(--hover);
+  color: #8CBDEE; }
+
+.id__web-address,
+.id__link {
+  color: #63696F;
+  transition: 0.25s;
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em; }
+
 @media (min-width: 1024px) {
   .id .id__img {
     width: 1021px; }
@@ -365,7 +385,6 @@ hr {
       border-bottom: 0px;
       height: 200px;
       padding-right: 20px;
-      padding-top: 25px;
       font-size: 25px; }
     .id .id__row .id__secondary {
       flex: 2;
