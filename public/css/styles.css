@@ -213,7 +213,11 @@ hr {
   width: 100%;
   background-color: #ebecec;
   height: 2px;
-  margin-bottom: 50px; }
+  margin-bottom: 30px; }
+
+span {
+  color: #D72500;
+  font-weight: 700; }
 
 #header-container, #nav {
   display: flex;
@@ -270,6 +274,9 @@ hr {
   .about .about__paragraph-container {
     font-size: 15px;
     margin: 0 70px; }
+  .about .about__paragraph p {
+    font-weight: 300;
+    line-height: 1.4; }
 
 @media (min-width: 1024px) {
   .about {
@@ -415,9 +422,7 @@ hr {
   #nav {
     width: 30%;
     padding-top: 40px;
-    margin-right: 35px; }
-  a.nav__item:hover {
-    color: blue; } }
+    margin-right: 35px; } }
 
 @media (min-width: 1024px) {
   #logo {
