@@ -367,7 +367,8 @@ hr {
   font: inherit;
   line-height: 1;
   margin: 0.5em;
-  padding: 1em 2em; }
+  padding: 1em 2em;
+  outline: 0; }
 
 @media (min-width: 1024px) {
   .id .id__img {
@@ -540,7 +541,8 @@ hr {
   border: 2px solid #b5c1cc;
   font: inherit;
   line-height: 1;
-  padding: 15px; }
+  padding: 15px;
+  outline: 0; }
 
 #nav .nav__portfolio #portfolio {
   color: #D72500;
