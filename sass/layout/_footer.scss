@@ -16,7 +16,12 @@
   }
    .copyright {
     padding-top: 20px;
-    color: white;
+    color: #D72500;
+    font-weight: 300;
+
+    span {
+      color: white;
+    }
   }
 
 }

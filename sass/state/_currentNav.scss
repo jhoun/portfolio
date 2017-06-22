@@ -3,29 +3,33 @@
 .nav__item:hover,
 .nav__item:focus {
   box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
-  transform: translateY(-0.25em);
+  transform: translateY(0.25em);
   border-color: var(--hover);
-  color: #8CBDEE;
+  color: #D72500;
 }
 
 .nav__item {
-  color: #b5c1cc;
+  color:  white;
   transition: 0.25s;
   background: none;
-  border: 2px solid;
+  border: 2px solid #b5c1cc;
   font: inherit;
   line-height: 1;
+  padding: 15px;
 }
 
-  .portfolio #portfolio  {
-    color: #63696F;
+  .nav__portfolio #portfolio  {
+    color: #D72500;
+    border: 2px solid #D72500;
   }
 
-  .about #about {
-    color: #63696F;
+  .nav__about #about {
+    color: #D72500;
+    border: 2px solid #D72500;
   }
 
-  .contact #contact {
-    color: #63696F;
+  .nav__contact #contact {
+    color: #D72500;
+    border: 2px solid #D72500;
   }
 }

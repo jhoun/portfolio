@@ -247,7 +247,10 @@ hr {
       margin-top: 10px; }
   #footer-container .copyright {
     padding-top: 20px;
-    color: white; }
+    color: #D72500;
+    font-weight: 300; }
+    #footer-container .copyright span {
+      color: white; }
 
 .project {
   display: flex;
@@ -258,8 +261,6 @@ hr {
   flex: 1; }
 
 .about {
-  display: flex;
-  flex-direction: column;
   flex: 1; }
   .about .about__image-item {
     width: 275px;
@@ -290,13 +291,13 @@ hr {
   margin: 50px 0;
   font-size: 25px;
   font-weight: 300;
-  color: #6d7993; }
+  color: #D72500; }
 
 .back {
   margin-top: 10px; }
 
 .back a {
-  color: #8CBDEE; }
+  color: #D72500; }
 
 .contact {
   flex: 1;
@@ -355,7 +356,7 @@ hr {
   box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
   transform: translateY(-0.25em);
   border-color: var(--hover);
-  color: #8CBDEE; }
+  color: #D72500; }
 
 .id__web-address,
 .id__link {
@@ -528,23 +529,27 @@ hr {
 #nav .nav__item:hover,
 #nav .nav__item:focus {
   box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
-  transform: translateY(-0.25em);
+  transform: translateY(0.25em);
   border-color: var(--hover);
-  color: #8CBDEE; }
+  color: #D72500; }
 
 #nav .nav__item {
-  color: #b5c1cc;
+  color: white;
   transition: 0.25s;
   background: none;
-  border: 2px solid;
+  border: 2px solid #b5c1cc;
   font: inherit;
-  line-height: 1; }
+  line-height: 1;
+  padding: 15px; }
 
-#nav .portfolio #portfolio {
-  color: #63696F; }
+#nav .nav__portfolio #portfolio {
+  color: #D72500;
+  border: 2px solid #D72500; }
 
-#nav .about #about {
-  color: #63696F; }
+#nav .nav__about #about {
+  color: #D72500;
+  border: 2px solid #D72500; }
 
-#nav .contact #contact {
-  color: #63696F; }
+#nav .nav__contact #contact {
+  color: #D72500;
+  border: 2px solid #D72500; }

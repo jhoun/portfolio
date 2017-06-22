@@ -7,9 +7,9 @@
       <hr class="id__horizontal">
       <div class="id__row">
         <div class="id__primary">
-          <button class="id__web-address"><a href="{{this.link}}" target="_blank">Launch Project</a></button>
+          <a href="{{this.link}}" target="_blank"><button class="id__web-address">Launch Project</button></a>
           <br>
-          <button class="id__link"><a href="{{this.github}}" target="_blank">Github</a></button>
+          <a href="{{this.github}}" target="_blank"><button class="id__link">Github</button></a>
           {{#if ../user.admin}}
             <div class="user">
               <a class="user__link" href="/portfolio/{{id}}/edit">Edit</a>
