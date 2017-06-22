@@ -407,8 +407,8 @@ hr {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly; }
-    #nav .nav__item {
-      margin: 0 15px;
+    #nav .nav__link {
+      margin-top: -25px;
       flex: 1; } }
 
 @media (min-width: 1024px) {
